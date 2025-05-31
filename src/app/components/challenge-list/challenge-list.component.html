@@ -1,0 +1,10 @@
+ <!-- CHALLENGES CARD -->
+    <div class="d-flex flex-column gap-3" id="challenges" #challenge>
+      <app-challenge-card *ngFor="let challenge of challenges, let i = index"
+    [id]="challenge.id"
+      [titulo]="challenge.titulo"
+      [descripcion]="challenge.descripcion"
+      [duracion]="challenge.duracion"
+      [completado]="challenge.completado"
+    ></app-challenge-card>
+    </div>
