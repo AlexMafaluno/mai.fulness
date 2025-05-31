@@ -1,0 +1,10 @@
+
+
+  <div class="challenge-list-element d-flex flex-column justify-content-center px-2 px-xl-4 py-2 py-xl-3"
+  [routerLink]="['/desafios/', id]">
+  <div class="challenge-card">
+  <h3>{{ titulo }}</h3>
+    <p>{{ duracion }} min</p>
+    <p>Completado: {{ completado ? 'Sí' : 'No' }}</p>
+  </div>
+  </div>
